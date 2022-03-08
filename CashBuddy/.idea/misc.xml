@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_add_50.xml" value="0.2759259259259259" />
+        <entry key="app/src/main/res/drawable/progressbar_mini.xml" value="0.2630208333333333" />
+        <entry key="app/src/main/res/drawable/raduis_white.xml" value="0.22777777777777777" />
+        <entry key="app/src/main/res/drawable/raduis_white_2.xml" value="0.24351851851851852" />
+        <entry key="app/src/main/res/layout/activity_agree.xml" value="0.3109375" />
+        <entry key="app/src/main/res/layout/activity_bank.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_card.xml" value="0.3109375" />
+        <entry key="app/src/main/res/layout/activity_email.xml" value="0.1150527385238172" />
+        <entry key="app/src/main/res/layout/activity_end.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_id_card_one.xml" value="0.255948132026232" />
+        <entry key="app/src/main/res/layout/activity_id_card_one_input.xml" value="0.2630208333333333" />
+        <entry key="app/src/main/res/layout/activity_id_card_rule.xml" value="0.2825437792755724" />
+        <entry key="app/src/main/res/layout/activity_id_card_two.xml" value="0.3109375" />
+        <entry key="app/src/main/res/layout/activity_id_card_two_input.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.296875" />
+        <entry key="app/src/main/res/layout/activity_ocr.xml" value="0.3109375" />
+        <entry key="app/src/main/res/layout/activity_p.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_start.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_user_bank.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_user_input.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/bank_item.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/card_adapter.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/horizontal_title.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/select_address_item.xml" value="0.3109375" />
+        <entry key="app/src/main/res/layout/select_dialog.xml" value="0.3109375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

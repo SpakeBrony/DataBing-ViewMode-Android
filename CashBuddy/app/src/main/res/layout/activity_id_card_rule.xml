@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        >
+
+        <ScrollView
+            android:layout_marginTop="@dimen/title_top_h"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="In order to improve the recognition success rate,please pay attention the following methods."
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="If the recognition fails,please be patient and you can shoot and upload by yourself"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textColor="#3F51B5"
+                            android:text="Place it within the box"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/card1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/red"
+                            android:text="Do not place outside the box"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/card2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/red"
+                            android:text="No flash &#038; avoid glare"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/card3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"/>
+
+
+                        <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/next"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:background="?attr/selectableItemBackground"
+                            fancy:fb_borderColor="#FFFFFF"
+                            fancy:fb_defaultColor="@color/app"
+                            fancy:fb_focusColor="@color/gray"
+                            fancy:fb_radius="10dp"
+                            fancy:fb_text="OK"
+                            fancy:fb_textColor="#ffffff"
+                            fancy:fb_textSize="19sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

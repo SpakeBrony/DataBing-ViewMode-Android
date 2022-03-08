@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        >
+
+        <ScrollView
+            android:layout_marginTop="@dimen/title_top_h"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Please confirm your personal information."
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:text="The correctness of the information will affect the results of the review or quota. if the information is incorrect,you can choose to modify it."
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:background="@drawable/raduis_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Pan No:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/red"
+                        android:text="*this field cannot be modified,if there is an error,please go back and scan again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_h"
+                        android:inputType="text"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/raduis_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Name:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                     <EditText
+                         android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_h"
+                        android:inputType="text"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/raduis_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Birthday:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/input_h">
+
+                      <EditText
+                          android:id="@+id/date_input"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:focusable="false"
+                          android:inputType="text"
+                          android:textColor="@color/black" />
+
+                      <ImageView
+                          android:id="@+id/button_date"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:layout_alignParentRight="true"
+                          android:src="@drawable/ic_baseline_date_range_24" />
+                  </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="@drawable/raduis_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Father Name:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_h"
+                        android:inputType="text"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:background="?attr/selectableItemBackground"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_defaultColor="@color/app"
+                    fancy:fb_focusColor="@color/gray"
+                    fancy:fb_radius="10dp"
+                    fancy:fb_text="Confirm"
+                    fancy:fb_textColor="#ffffff"
+                    fancy:fb_textSize="19sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

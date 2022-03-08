@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_top_h"
+    android:theme="?actionBarTheme">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="?actionBarStyle"
+        android:paddingLeft="?contentInsetStart"
+        android:paddingRight="?contentInsetEnd">
+
+        <TextView
+            android:id="@+id/title_view"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="title"
+            android:textAppearance="?titleTextStyle" />
+    </androidx.cardview.widget.CardView>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/materialProgressBar"
+        android:visibility="invisible"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:indeterminate="true"
+        app:mpb_indeterminateTint="@color/app"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_useIntrinsicPadding="false"
+        app:mpb_showProgressBackground="false"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding" />
+</FrameLayout>

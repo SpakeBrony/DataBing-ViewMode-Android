@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="title_top_h">55dp</dimen>
+    <dimen name="input_h">55dp</dimen>
+</resources>

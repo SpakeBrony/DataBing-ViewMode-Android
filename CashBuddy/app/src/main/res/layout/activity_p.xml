@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/title_top_h"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <cash.buddy.go.credit.bee.com.loan.view.PageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:dotColor="#4C00574A"
+                    app:dotColorSelected="#00574A"
+                    app:dotHeight="10dp"
+                    app:dotSelectedWidth="20dp"
+                    app:dotSpace="10dp"
+                    app:dotWidth="14dp"/>
+                <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="?attr/selectableItemBackground"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_defaultColor="@color/app"
+                    fancy:fb_focusColor="@color/gray"
+                    fancy:fb_radius="10dp"
+                    fancy:fb_text="AGREE"
+                    fancy:fb_textColor="#ffffff"
+                    fancy:fb_textSize="19sp" />
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

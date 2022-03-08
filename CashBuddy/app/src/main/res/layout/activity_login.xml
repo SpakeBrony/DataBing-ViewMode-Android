@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="cash.buddy.go.credit.bee.com.loan.viewmodel.LoginModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#f4f4f4"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/title_top_h"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Automatic registration of new users"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_h"
+                        app:cardCornerRadius="10dp" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="@dimen/input_h"
+                        android:layout_height="@dimen/input_h"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text="+91 |"
+                        android:textColor="@color/black" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phone_input"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        app:errorEnabled="true"
+                        app:errorMsg="@{viewModel.phoneErrorMsg}"
+                        app:hintEnabled="false"
+                        app:numSize="@{10}">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/input_h"
+                            android:inputType="phone"
+                            android:paddingLeft="@dimen/input_h"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Verification Code"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_h"
+                        app:cardCornerRadius="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/code_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        app:errorEnabled="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:errorMsg="@{viewModel.codeErrorMsg}"
+                        app:hintEnabled="false"
+                        app:numSize="@{6}">
+
+                        <EditText
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/input_h"
+                            android:inputType="phone"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <mehdi.sakout.fancybuttons.FancyButton
+                        android:id="@+id/get_code"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:elevation="5dp"
+                        android:onClick="@{(v) -> viewModel.getCode(v)}"
+                        app:fb_borderColor="#FFFFFF"
+                        app:fb_defaultColor="@color/app"
+                        app:fb_focusColor="@color/gray"
+                        app:fb_radius="10dp"
+                        app:fb_text="Send"
+                        app:fb_textColor="#ffffff"
+                        app:fb_textSize="13sp" />
+                </RelativeLayout>
+
+                <mehdi.sakout.fancybuttons.FancyButton xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:enabled="@{viewModel.loginButtonFlag}"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_defaultColor="@color/app"
+                    fancy:fb_focusColor="@color/gray"
+                    fancy:fb_radius="10dp"
+                    fancy:fb_text="Sign in"
+                    fancy:fb_textColor="#ffffff"
+                    fancy:fb_textSize="19sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
